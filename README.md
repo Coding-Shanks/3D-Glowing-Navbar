@@ -16,7 +16,7 @@ A modern, animated 3D navigation bar with glowing hover effects, dynamic color c
 ## 🚀 How to Use  
 1. **Clone the repository:**  
    ```bash
-   git clone https://github.com/your-username/3D-Glowing-Navbar.git
+   git clone https://github.com/Coding-Shanks/3D-Glowing-Navbar.git
    ```
 2. **Open index.html in a browser.**  
 
@@ -26,14 +26,14 @@ A modern, animated 3D navigation bar with glowing hover effects, dynamic color c
 - **Add/remove links:** Edit the HTML `<ul>` structure.  
 
 ## 🌐 Live Demo  
-[View Live Demo](#) *(Host on GitHub Pages or Netlify)*  
+[View Live Demo](https://3-d-glowing-navbar.vercel.app/) *(Host on GitHub Pages or Netlify)*  
 
 ## 📜 License  
 MIT License. See `LICENSE` for details.
 
 ## 👨💻 Author  
-Your Name  
-
+  Coding-Shanks
+  
 ## 🔗 Resources Used  
 - [Coolors.co](https://coolors.co/) (For gradient inspiration)  
 - [Google Fonts](https://fonts.google.com/) (Arial as fallback)  
@@ -44,7 +44,7 @@ Your Name
 ```text
 MIT License
 
-Copyright (c) 2023 Your Name
+Copyright (c) 2023 Coding-Shanks
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -70,7 +70,7 @@ SOFTWARE.
 2. Select the `main` branch and root folder.  
 3. Save, and your project will be live at:  
    ```
-   https://your-username.github.io/3D-Glowing-Navbar
+   https://Coding-Shanks.github.io/3D-Glowing-Navbar
    ```
 
 

@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    perspective: 1000px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transform-style: preserve-3d;
+}
+
+.navbar ul li {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    display: block;
+    background: linear-gradient(45deg, #ff6f61, #ffcc00, #00ccff, #ff00ff);
+    background-size: 300% 300%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateZ(20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-position 0.5s ease;
+}
+
+/* 3D Effect on Hover */
+.navbar ul li:hover {
+    transform: translateZ(50px) rotateX(15deg) rotateY(15deg);
+    box-shadow: 0 20px 40px rgba(255, 111, 97, 0.5), 0 20px 40px rgba(255, 204, 0, 0.5), 0 20px 40px rgba(0, 204, 255, 0.5), 0 20px 40px rgba(255, 0, 255, 0.5);
+}
+
+/* Glow Effect */
+.navbar ul li:hover a {
+    background-position: 100% 50%;
+    box-shadow: 0 0 20px rgba(255, 111, 97, 0.8), 0 0 40px rgba(255, 204, 0, 0.8), 0 0 60px rgba(0, 204, 255, 0.8), 0 0 80px rgba(255, 0, 255, 0.8);
+}
+
+/* Keyframes for Continuous Glow */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 111, 97, 0.8), 0 0 20px rgba(255, 204, 0, 0.8), 0 0 30px rgba(0, 204, 255, 0.8), 0 0 40px rgba(255, 0, 255, 0.8);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(255, 111, 97, 0.8), 0 0 40px rgba(255, 204, 0, 0.8), 0 0 60px rgba(0, 204, 255, 0.8), 0 0 80px rgba(255, 0, 255, 0.8);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(255, 111, 97, 0.8), 0 0 20px rgba(255, 204, 0, 0.8), 0 0 30px rgba(0, 204, 255, 0.8), 0 0 40px rgba(255, 0, 255, 0.8);
+    }
+}
+
+/* Active Link Style */
+.navbar ul li a.active {
+    background: linear-gradient(45deg, #ff00ff, #00ccff, #ffcc00, #ff6f61) !important;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8), 0 0 40px rgba(0, 204, 255, 0.8), 0 0 60px rgba(255, 204, 0, 0.8), 0 0 80px rgba(255, 111, 97, 0.8);
+    animation: glow 1.5s infinite;
+}
+
+/* Click Animation */
+.navbar ul li a:active {
+    transform: scale(0.9);
+    transition: transform 0.2s ease;
+}
+
+/* Apply Glow Animation on Hover */
+.navbar ul li:hover a {
+    animation: glow 1.5s infinite;
+}

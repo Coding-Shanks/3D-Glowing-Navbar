@@ -3,7 +3,7 @@
 A modern, animated 3D navigation bar with glowing hover effects, dynamic color changes, and smooth scrolling. Built with HTML, CSS, and JavaScript.
 
 ![Thumbnail](image.png)  
-*(Replace with a screenshot of your project)*
+
 
 ## ✨ Features  
 - 3D hover effect with perspective transforms.  

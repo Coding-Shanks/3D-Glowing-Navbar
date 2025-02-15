@@ -2,7 +2,7 @@
 
 A modern, animated 3D navigation bar with glowing hover effects, dynamic color changes, and smooth scrolling. Built with HTML, CSS, and JavaScript.
 
-![Thumbnail](https://via.placeholder.com/1280x720.png?text=3D+Glowing+Navbar+Demo)  
+![Thumbnail](image.png)  
 *(Replace with a screenshot of your project)*
 
 ## ✨ Features  
